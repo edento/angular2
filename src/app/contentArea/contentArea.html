@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div>
+  <ul class="characters">
+    <li *ngFor="let character of characters">
+      <div (click)="select(character)">
+        {{character}}
+      </div>
+    </li>
+  </ul>
+  <div>Selected: {{ selectedCharacter }}</div>
+</div>
